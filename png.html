@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #4caf50;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Tool</h1>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="input">Input:</label>
+        <input type="text" id="input" name="input" required>
+      </div>
+      <div class="form-group">
+        <label for="output">Output:</label>
+        <textarea id="output" name="output" readonly></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Process</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Include JavaScript code for AI functionality -->
+  <script src="ai.js"></script>
+</body>
+</html>
